@@ -1,6 +1,7 @@
+#include<time.h>
 #include<iostream>
 #include<conio.h>
-#include<math.h>
+
 {
   //CODE TODO//
 }
