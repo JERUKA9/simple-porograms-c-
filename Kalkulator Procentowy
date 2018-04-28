@@ -1,6 +1,40 @@
-#include<math.h>
-#include<conio.h>
 #include<iostream>
+
+using namespace std;
+
+long int liczba1;
+
+float liczba2;
+
+int nasz_mnoznik=100;
+
+
+int main()
+
 {
-   //CODE TODO//
+  std::cout<<"podaj pierwsza liczbe:\n";
+  std::cin>>liczba1;
+  std::cout<<"podaj druga liczbe:\n";
+  std::cin>>liczba2;
+
+  std::cout<<"wynik mnozenia pierwszej liczby\n"<<liczba1*nasz_mnoznik<<"\n";
+
+
+
+  std::cout<<"wynik mnozenia drugiej liczby\n"<<liczba2*nasz_mnoznik<<"\n";
+
+  std::cout<<"roznica dwoch liczb\n"<<liczba1-liczba2*nasz_mnoznik<<"\n";
+
+
+  std::cout<<"iloczyn dwoch liczb\n"<<liczba1/liczba2*nasz_mnoznik<<"\n";
+
+  std::cout<<"suma dwoch liczb\n"<<liczba1+liczba2*nasz_mnoznik<<"\n";
+
+
+  return 0;
+
+
 }
+
+
+
