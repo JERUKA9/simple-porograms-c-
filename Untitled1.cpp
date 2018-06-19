@@ -1,9 +1,17 @@
 #include<iostream>
-
+#include"cat.h"
 using namespace std;
 
 int main()
 {
-	std::cout<<"czy"<<3+4<<"jest wieksze od "<<"siedem";
-	return 0;
+
+
+Cat cat1;
+
+
+cat1.speak();
+cat1.jump();
+
+    return 0;
+
 }

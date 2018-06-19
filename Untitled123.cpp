@@ -1,0 +1,2 @@
+ *pointer = new
+ *pointer= delete

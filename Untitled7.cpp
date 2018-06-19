@@ -1,13 +1,16 @@
-#include <iostream>
-
-int nieznana=123;
-
-
-
-
+#include<iostream>
+#include"Person.h"
+using namespace std;
 
 int main()
 {
-    std::cout << "Liczba = " << nieznana << std::endl;
-    return 0;
+
+Person person;
+
+person.setName("Georgina");
+std::cout<<person.toString()<<std::endl;
+std::cout<<"name of person with get method"<<person.getName()<<std::endl;
+
+return 0;
+
 }

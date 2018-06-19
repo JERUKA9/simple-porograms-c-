@@ -1,9 +1,20 @@
 #include<iostream>
+#include"Cat.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Znajdz dwa rozne rozwiazania tego zadania." << endl;
-    return 0;
+  Cat jim;
+jim.speak();
+jim.makehappy();
+
+cat bob;
+bob.makesad();
+bob.speak();
+
+  return 0;
+
+
+
 }
