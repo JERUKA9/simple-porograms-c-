@@ -1,15 +1,24 @@
-std::string;
+#include<iostream>
 
-std::string tekst1;
-std::string teks2;
+using namespace std;
+class xyz
+{
+public:
 
-std::string moja_zmienna;
-moja_zmienna.c_str();
+int a;
+xyz(int x){
+a=x;
+}
+};
+int main()
+{
+ xyz obj1(10);
+ xyz obj2 = obj1;
+ xyz obj3(30);
+std::cout<<obj1.a<<std::endl<<obj2.a<<std::endl<<obj3.a;
 
 
-nazwa_zmiennej.nazwa_metody();
 
+return 0;
 
-std::string tablica[10];
-tablica[0],c_str();
-
+}

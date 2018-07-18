@@ -1,20 +1,32 @@
 #include<iostream>
 
-void wypisztablice(int tablica[],int ile)
-{
-	for(int indeks=0;indeks<ile;indeks++)
-	std::cout<<tablica[indeks]<<std::endl;
-}
+using namespace std;
 
-int main()
-{
-	int dane[5];
-	dane[0]=123;
-	dane[1]=321;
-	dane[2]=333;
-	dane[3]=222;
-	dane[4]=111;
-	wypisztablice(dane,5);
-	
+class stud{
+public:
+ char name[20];
+ int age;
+ float per;
+};
+ void enter(){
+
+  std::cout<<"enter the name age  and percentage:\n";
+  std::cin>>name>>age>>per;
+
+ }
+ void display(){
+
+ std::cout<<"\nname\tage\tpercentage";
+ std::cout<<"\n"<<name<<"\t"<<age<<"\t"<<per;
+ }
+
+
+ int main(){
+ class stud s;
+ s.enter();
+ s.display();
+
+
+
 }
 

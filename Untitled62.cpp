@@ -1,24 +1,24 @@
 #include<iostream>
-int main()
-{
-	int liczba[10];
-	int licznik=0;
-	do
-	{
-		std::cin>>liczba[licznik];
-		licznik++;
-		
-	}while(licznik<10);
-	
-	std::cout<<"podales nastepujace liczby:";
-	licznik=0;
-	do
-	{
-		std::cout<<liczba[licznik]<<",";
-		licznik++;
-		
-	}while(licznik<10);
-	
-	return 0;
-	
+using namespace std;
+struct student {
+int age;
+char name[20];
+};
+void display( struct student rec){
+
+
+std::cout<<"age ="<<rec.age<<std::endl<<"name = "<<rec.name<<std::endl;
+
+
+
+}
+int main(){
+
+struct student record1={23,"wiliams"};
+struct student record2 ={17,"robert"};
+display(record1);
+display(record2);
+
+
+
 }

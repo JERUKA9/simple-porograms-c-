@@ -1,22 +1,21 @@
-int x=5;
-int tmp=x*2;
-x=tmp;
+#include<iostream>
 
-int x=5;
-x=x*2;
+using namespace::std;
 
-int x=5;
-x *=2;
 
-x=x+y; x+=y;
+int main()
+{
+int a,b,c;
+std::cout<<"enter two numbers:";
+std::cin>>a>>b;
+c= a*b;
+std::cout<<"answer = "<<c;
 
-x=x-y; x-=y;
-x=x*y;  x*=y;
-x=x/y;  x/=y;
-x=x%y;  x%=y;
 
-++ zmienna
-zmienna++
---zmienna
-zmienna--
+return 0;
 
+
+
+
+
+}

@@ -1,26 +1,32 @@
-std::string zmienna;
-std::cin>>zmienna;
+#include<iostream>
+using namespace std;
 
-printf("%s\n",nasza_zmienna_tekstowa.c_str());
+class base {
 
-std::string zmienna="stary tekst";
-zmienna="nowy tekst";
+int i;
+protected:
+    int j;
+public:
+    int k;
+    void seti(int a){i = a;}
+    int geti(){return i;}
+};
+class derived : protected base{
 
-std::string napis1="pierwszy";
-std::string napis2="drugi";
-std::string napis3=napis1+napis2;
+public:
+    void setj(int a){j = a;}
+    void setk(int a ){k = a;}
+    int getj(){return j;}
+    int getk(){return k;}
 
-std::string napis ="pierwszy";
-napis+="drugi";
-napis+="trzeci";
-napis+="czwarty";
+};
+int main()
+{
+    derived ob;
+    ob.setk(10);
+    std::cout<<ob.getk()<<std::endl;
+    ob.setj(12);
+    std::cout<<ob.getj()<<std::endl;
+    return 0;
 
-std::string napis;
-napis="pierwszy";
-napis=napis+"drugi";
-
-std::string zmienna ="abc";
-zmienna="";
-
-std::string zmienna ="abc";
-zmienna.clear();
+}

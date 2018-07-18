@@ -1,26 +1,41 @@
 #include<iostream>
 
-void wypisztablice(int tablica[],int ile)
+using namespace std;
+
+class Shape
 {
-	int indeks=0;
-	if(indeks<ile)
-	do
-	{
-		std::cout<<tablica[indeks]<<std::endl;
-		indeks++;
-	}while(indeks<ile);
-	
-}
-int main()
+ public:
+     void setWidth(int w)
+     {
+
+         width=w;
+     }
+     void setHeight(int h)
+     {
+         height=h;
+     }
+ protected:
+    int width;
+    int height;
+
+};
+class Rectangle : public Shape
 {
-	int dane[5];
-	dane[0]=123;
-	dane[1]=321;
-	dane[2]=333;
-	dane[3]=222;
-	dane[4]=111;
-	wypisztablice(dane,5);
-	
-	return 0;
-	
+    public:
+     int getArea()
+     {
+         return (width  *   height);
+
+     }
+};
+int main(void)
+{
+    Rectangle Rect;
+    Rect.setWidth(5);
+    Rect.setHeight(7);
+
+    std::cout<<"total area:"<<Rect.getArea()<<std::endl;
+
+    return 0;
+
 }

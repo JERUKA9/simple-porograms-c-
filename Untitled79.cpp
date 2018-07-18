@@ -1,21 +1,25 @@
 #include<iostream>
-#include<string>
+using namespace  std;
+class base {
+public:
+    void display(){std::cout<<"you are in base class "<<std::endl;}
 
+};
+class derived: public base{
+public:
+
+       void display(){std::cout<<"you are in the derived class";}
+
+};
 int main()
 {
-	std::string imie;
-	std::string nazwisko;
-	std::string o_sobie;
-	std::cout<<"podaj imie:";
-	std::cin>>imie;
-	std::cout<<"podaj nazwisko:";
-	std::cin>>nazwisko;
-	std::cout<<"napisz zdanie o sobie:";
-	std::cin.sync();
-	std::getline(std::cin,o_sobie);
-	std::cout<<"twoje imie to :"<<imie<<std::endl;
-	std::cout<<"twoje nazwisko to :"<<nazwisko<<std::endl;
-	std::cout<<"napisales o sobie :"<<o_sobie<<std::endl;
-	return 0;
-	
+base *b;
+derived *d;
+b->display();
+d->display();
+
+
+
+ return 0;
+
 }

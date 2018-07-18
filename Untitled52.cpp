@@ -1,40 +1,23 @@
 #include<iostream>
-void moja_funkcja;
-{
-	std::cout<<"[1]-dodawanie"<<std::endl;
-	std::cout<<"[2]-odejmowanie"<<std::endl;
-	std::cout<<"[0]-wyjscie z programu"<<std::endl;
-}
-void dodawanie()
-{
-	std::cout<<"jeszcze nie oprogramowano"<<std::endl;
-	
-}
-void odejmowanie()
-{
-	dodawanie();
-}
+#include<cstring>
+
+using namespace std;
+
 int main()
 {
-	std::cout<<"w programie sa dostepne nastepujace opcje:"<<std::endl;
-	moja_funkcja();
-	std::cout<<"zycze przyjemnego korzystania z programu"<<std::endl<<std::endl;
-	int liczba;
-	do
-	{
-		moja_funkcja();
-		std::cin>>liczba;
-		switch(liczba)
-		{
-			case 1:
-				dodawanie();
-				break;
-				case 2:
-					odejmowanie();
-					break;
-					default:
-						break;
-		}
-	} while(liczba !=0)
-}   return 0;
+char name1[30];
+char name2[30];
+int len;
+std::cout<<"enter the name1 and name 2:"<<std::endl;
+cin.getline(name1,30);
+cin.getline(name2,30);
+strcat(name1,name2);
 
+std::cout<<"name1 ="<<name1<<std::endl<<"name2 ="<<name2;
+
+
+
+
+ return 0;
+
+}

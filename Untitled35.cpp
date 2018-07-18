@@ -1,15 +1,18 @@
 #include<iostream>
+
+
+using namespace::std;
+
 int main()
 {
-	int wiek;
-	std::cin>>wiek;
-	if(wiek>=18)
-	{
-		std::cout<<"twierdzisz ze jestes pelnoletni :)"<<std::endl;
-		std::cout<<"ale czy to kogos interesuje ? :)"<<std::endl;
-	}
-	std::cout<<"koniec"<<std::endl;
-	return 0;
-	
+int number,factorial=1;
+std::cout<<"enter any number:";
+std::cin>>number;
+while(number>0){
+    factorial = factorial *  number;
+    --number;
 }
+std::cout<<"the factorial is"<<factorial;
 
+ return 0;
+}

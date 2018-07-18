@@ -1,17 +1,36 @@
-#include<string>
 #include<iostream>
-void szukajZnaku(std::string & tekst, char szukanyZnak)
+using namespace  std;
+class shape{
+protected:
+    float l;
+public:
+    void get_data(){
+    std::cin>>l;
+    }
+    virtual float area() = 0;
+
+};
+class square :  public shape{
+ public:
+     float area()
+     {
+
+         return l * l;
+
+     }
+
+
+
+};
+class circle : public shape
 {
-	size_t znalezionaPozycja = tekst.find(szukanyZnak);
-	if(znalezionaPozycja == std::string::npos)
-	std::cout<<"nie znaleziono znaku w tekscie"<<std::endl;
-	else
-	std::cout<<"znak zostal odnaleziony na pozycji"<<znalezionaPozycja<<std::endl;
-}
+public:
+    float area(){return 3.14 * l * l};
+};
 int main()
 {
-	std::string naszTekst= "Przyk³ad z kurscu C++ (http://cpp0x.pl)";
-	szukajZnaku(naszTekst,'k');
-	return 0;
-	
+square sq(2);
+sq.area();
+
+
 }

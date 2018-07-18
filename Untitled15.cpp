@@ -1,18 +1,23 @@
 #include<iostream>
 
-int main(void)
+using namespace::std;
+
+
+int main()
 {
-	int a;
-	std::cout<<"podaj a:";
-	std::cin>>a;
-	
-	int b;
-	std::cout<<"podaj b:";
-	std::cin>>b;
-	
-	std::cout<<"a%b="<<a%b<<std::endl;
-	
-	return 0;
-	
-	
+float gallons,litres;
+std::cout<<"enter the number of gallons:";
+std::cin>>gallons;
+litres = gallons * 3.7854;
+std::cout<<"litres ="<<litres;
+
+
+
+
+return 0;
+
+
+
+
+
 }

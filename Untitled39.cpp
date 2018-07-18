@@ -1,14 +1,23 @@
 #include<iostream>
+
+using namespace std;
+
+int add (int num1 , int num2);
+
+
 int main()
 {
-	int wiek;
-	std::cin>>wiek;
-	if(wiek<18)
-	std::cout<<"nie jestes pelnoletni"<<std::endl;
-	else;
-	
-	std::cout<<"jestes pelnoletni"<<std::endl;
-	std::cout<<"koniec"<<std::endl;
-	return 0;
-	
+int a,b,s;
+a=10;
+b=20;
+s= add(a,b);
+std::cout<<s;
+ return 0;
+}
+int add(int num1, int num2)
+{
+    int num3;
+    num3 = num1+num2;
+    return num3;
+
 }

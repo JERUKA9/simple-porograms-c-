@@ -1,12 +1,23 @@
 #include<iostream>
 
-bool wynik;
-
+using namespace::std;
 
 int main()
 {
-	wynik = true||false&&!true &&false||!(!true&&false);
-	std::cout<<"wynik="<<wynik<<std::endl;
-	return 0;
-	
+int n,i;
+
+std::cout<<"enter any integer:";
+std::cin>>n;
+
+for(i=1;i<=10;++i)
+{
+
+    std::cout<<n<<" * "<<i<<" = "<<i * n<<std::endl;
+
+}
+
+
+
+ return 0;
+
 }

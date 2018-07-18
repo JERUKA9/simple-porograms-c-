@@ -1,13 +1,16 @@
 #include<iostream>
-#include<cstdlib>
+
+using namespace std;
+
 int main()
 {
-	std::cout<<"wylosowanie pierwsze"<<std::rand()<<std::endl;
-	int liczba=std::rand();
-	std::cout<<"wylosowanie drugie"<<liczba<<std::endl;
-	liczba=std::rand();
-	std::cout<<"wylosowanie trzecie"<<liczba<<std::endl;
-	return 0;
-	
-}
+char name[30];
+std::cout<<"enter the name :";
+cin.getline(name,30);
+std::cout<<"\n"<<name;
 
+
+
+ return 0;
+
+}
