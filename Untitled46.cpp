@@ -1,17 +1,20 @@
-include<iostream>
+#include<iostream>
+using namespace std;
 int main()
 {
-	int ile;
-	std::cout<<"ile razy wypisac napis ?";
-	std::cin>>ile;
-	if(ile>0)
-	do
-	{
-		std::cout<<"napis"<<std::endl;
-		ile--;
-		
-	}while(ile>0);
-	
-}    return 0;
+int a [2][2];
+int i , j;
+for(i=0;i<=2;i++)
+    for(j=0;j<=2;j++)
+    {
+        std::cout<<" enter the value of a["<<i<<"]["<<j<<"] = ";
+std::cin>>a[i][j];
+    }
+for(i=0;i<=2;i++)
+    for(j=0;j<=2;j++)
+        std::cout<<"a["<<i<<"]["<<j<<"] = "<<a[i][j]<<std::endl;
 
 
+return 0;
+
+}

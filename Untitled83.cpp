@@ -1,29 +1,14 @@
-#include<string>
 #include<iostream>
-
-void szukajWszystkichFraz(std::string & tekst, std::string szukanaFraza)
-{
-	size_t znalezionaPozycja=tekst.find(szukanaFraza);
-	if(znalezionaPozycja===std::string::npos)
-	{
-		std::cout<<"nie znaleziono frazy w tekscie"<<std::endl;
-		return;
-		
-	}
-	
-	do
-	{
-		std::cout<<"Fraza zostala odnaleziona na pozycji"<<znalezionaPozycja<<std::endl;
-		znalezionaPozycja=tekst.find(szukanaFraza,znalezionaPozycja+szukanaFraza.size());
-		
-	}while(znalezionaPozycja != std::string::npos);
-	
-	
-}
+using namespace std;
+class printdata{
+public:
+    void print(int i){std::cout<<"print int"<<i<<std::endl;}
+    void print(double f){std::cout<<"printing float"<<f<<std::endl;}
+};
 int main()
 {
-	std::strng naszTekst = "przyklad z kursu C++(http://cpp0x.pl)- najlepszy kurs w internecie";
-	szukajWszystkichFraz(naszTekst,"C++")
-	return 0;
-	
+    printdata pd;
+    pd.print(55);
+    pd.print(55.3);
 }
+

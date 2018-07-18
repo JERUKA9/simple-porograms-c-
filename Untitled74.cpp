@@ -1,19 +1,24 @@
 #include<iostream>
 
-void wypisz(int & ilczba)
+using namespace std;
+class xyz
 {
-	std::cout<<"wartosc liczby wynosi:"<<ilczba<<std::endl;
-	iliczba+=10;
-	std::cout<<"wartosc liczby wynosi:"<<ilczba<<std::endl;
-	
-}
+public:
 
+int a;
+int b;
+xyz(){
+a= 20;
+b=30;
+}
+};
 int main()
 {
-	int inaszaliczba=7;
-	std::cout<<"nasza liczba="<<inaszaliczba<<std::endl;
-	wypisz(inaszaliczba);
-	std::cout<<"nasza liczba ="<<inaszaliczba<<std::endl;
-	return 0;
-	
+ xyz obj;
+ std::cout<<obj.a<<std::endl<<obj.b;
+
+
+
+return 0;
+
 }

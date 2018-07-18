@@ -1,9 +1,18 @@
 #include<iostream>
 
+using namespace::std;
+
 int main()
 {
-	std::cout<<"obliczam : 3+2*4 ="<<3+3*4<<std::endl;
-	std::cout<<"obliczam: (3+2)*4 ="<<(3+2)*4<<std::endl;
-	return 0;
-	
+
+    int a;
+    a=25;
+     std::cout<<" the value inside a is : "<<a;
+
+     return 0;
+
+
+
 }
+
+

@@ -1,50 +1,22 @@
 #include<iostream>
+
+using namespace std ;
+
 int main()
 {
-	int liczba;
-	
-	int liczba2;
-	
-	std::cout<<"wprowadz pierwsza liczbe:";
-	
-     
-    std::cin>>liczba;
-    
-    
-    std::cout<<"wprowadz druga liczbe:"; 
+int i, n,total,marks[100];
+total = 0;
+std::cout<<"enter the number of subjects:";
+std::cin>>n;
+for(i=0;i<=n-1;i++){
 
-    std::cin>>liczba2;
-    
-	switch(liczba,liczba2)
-	{
-			
-				case 1:
-			std::cout<<"odejmowanie-="<<liczba-liczba2;
-			break;
-			
-				case 2:
-			std::cout<<"dzielenie/="<<liczba/liczba2;
-			break; 
-			
-			case 3:
-			std::cout<<"mnozenie*="<<liczba*liczba2;
-			break;
-		
-			
-			case 4:
-			std::cout<<"dodawanie+="<<liczba+liczba2;
-			break;
-		
-			
-			default:
-				std::cout<<"zadne z powyzszych dzialan";
-				break;
-			
-			
-			
-	}
-	
-	return 0;
-	
-	
+    std::cout<<"subject"<<i+1<<"=";
+    std::cin>>marks[i];
+    total = total + marks[i];
+}
+std::cout<<"total marks ="<<total<<std::endl;
+std::cout<<"average = "<<total/n;
+
+ return 0;
+
 }

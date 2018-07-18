@@ -1,13 +1,18 @@
 #include<iostream>
+
+
+using namespace::std;
+
 int main()
 {
-	int wiek;
-	std::cin>>wiek;
-	if(wiek>=18)
-	 std::cout<<"twierdzisz ze jestes pelnoletni :)"<<std::endl;
-	 
-	 std::cout<<"koniec"<<std::endl;
-	 
-	 return 0;
-	 
+int i = 1;
+do{
+
+std::cout<<i<<std::endl;
+i++;
+
+
+}while(i<=10);
+
+ return 0;
 }

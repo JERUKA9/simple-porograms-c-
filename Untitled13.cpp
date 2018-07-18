@@ -1,11 +1,17 @@
 #include<iostream>
+using namespace::std;
+
 int main()
 {
-	std::cout<<"podaj liczbe";
-	int zmienna;
-	std::cin>>zmienna;
-	std::cout<<"obliczam 3+zmienna*4="<<3+zmienna*4<<std::endl;
-	std::cout<<"obliczam(3+zmienna)*4="<<(3+zmienna)*4<<std::endl;
-	return 0;
-	
+
+    int a;
+    char grade;
+    grade = 'B';
+    a=25;
+    std::cout<<"the value inside a is : "<<a<<std::endl;
+    std::cout<<"the grade is :" <<grade;
+
+
+    return 0;
+
 }

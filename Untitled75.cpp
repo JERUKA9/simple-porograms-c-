@@ -1,24 +1,24 @@
 #include<iostream>
 
-bool wczytaj_liczba(int & liczba)
+using namespace std;
+class xyz
 {
-	std::cin.clear();
-	std::cin.sync();
-	std::cin>>liczba;
-	return std::cin.good();
-	
-}
+public:
 
+int a;
+xyz(int x){
+a=x;
+}
+};
 int main()
 {
-	int x;
-	do
-	{
-		std::cout<<"podaj liczbe:";
-		
-	}while(wczytaj_liczbe(x)==false);
-	std::cout<<"liczba podana to :"<<x<<std::endl;
-	
-	return 0;
-	
+ xyz obj1(10);
+ xyz obj2(20);
+ xyz obj3(30);
+std::cout<<obj1.a<<std::endl<<obj2.a<<std::endl<<obj3.a;
+
+
+
+return 0;
+
 }

@@ -1,11 +1,18 @@
 #include<iostream>
 
-bool wynik;
+
+using namespace::std;
 
 int main()
 {
-	wynik= (!true || ! false)&&(true||true)||(!false&&true);
-	
-	std::cout<<"wynik="<<wynik<<std::endl;
-	
+int i = 1;
+while(i<=10){
+
+std::cout<<i<<std::endl;
+i++;
+
+
+}
+
+ return 0;
 }

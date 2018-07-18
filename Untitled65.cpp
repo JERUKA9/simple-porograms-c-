@@ -1,42 +1,25 @@
 #include<iostream>
-
-void wyswietl(int tablica[],int ile)
-{
-	if(ile<=0)
-	{
-		std::cout<<"tablica jest pusta"<<std::endl;
-		return
-	}
-	
-	int i=0;
-	do
-	{
-		std::cout<<tablica[i]<<",";
-		i++;
-	}while(i<ile);
-	
-	std::cout<<std::endl
-}
-int dopisz(int nliczba,int tablica[],int ile)
-{
-	tablica[ile]=iliczba;
-	ile++;
-	return ile;
-	
-}
-
+using namespace std;
+class box{
+public:
+    int length;
+    int breadth;
+    int height;
+};
 int main()
 {
-	int liczbaelementow=0;
-	int  tablicaliczb[10];
-	wyswietl(tablicaliczb,liczbaelementow);
-	
-	liczbaelementow=dopisz(123,tablicaliczb,liczbaelementow);
-	wyswietl(tablicaliczb,liczbaelementow);
-	
-	liczbaelementow=dopisz(321,tablicaliczb,liczbaelementow);
-	wyswietl(tablicaliczb,liczbaelementow);
-	
-	return 0;
-	
+    int volume;
+    box box1;
+    box box2;
+    box1.length =1;
+    box1.breadth=2;
+    box1.height=3;
+    box2.length =2;
+    box2.breadth=3;
+    box2.height=4;
+    volume = box1.length * box1.breadth * box1.height;
+    std::cout<<volume<<std::endl;
+
+    volume =  box2.length * box2.breadth * box2.height;
 }
+

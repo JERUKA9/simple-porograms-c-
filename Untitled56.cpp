@@ -1,19 +1,23 @@
 #include<iostream>
-
-float dodawanie_inne()
-{
-	float a;
-	std::cin>>a;
-	float b;
-	std::cin>>b;
-	return a+b;
-}
+using namespace std;
+void swap( int *num1, int *num2);
 int main()
 {
-  std::cout<<"wprowadz dwie liczby:";
-float tu_bedzie_wynik=dodawanie_inne();
-std::cout<<"wynik dodwania wynosi:"<<tu_bedzie_wynik<<std::endl;
+int a =3,b=33,c;
+
+
+swap(&a,&b);
+
+std::cout<<a<<"\t"<<b;
+
 return 0;
+}
+void swap(int *num1 , int *num2)
+{
+    int num3;
+    num3 = *num1;
+    *num1 = *num2;
+    *num2  =  num3;
+
 
 }
-

@@ -1,11 +1,21 @@
 #include<iostream>
 
-bool wynik;
+using namespace::std;
 
 int main()
 {
-	wynik= true||false&&false||false&&true||true;
-	
-	std::cout<<"wynik="<<wynik<<std::endl;
-	
+int n;
+for(n=1;n<=10;n++)
+
+for(int i=1;i<=10;++i)
+{
+
+    std::cout<<n<<" * "<<i<<" = "<<i * n<<std::endl;
+
+}
+
+
+
+ return 0;
+
 }

@@ -1,26 +1,15 @@
 #include<iostream>
+using namespace std;
+struct student {
+int age;
+char name[20];
+}str;
+union student1{
+int age;
+char name[20];
+}uni;
+int main(){
+std::cout<<"memory of struct = "<<sizeof(str)<<std::endl<<"memory of union ="<<sizeof(uni);
 
-void wypelnijTablice(int t[],int irozmiar)
-{
-	std::cout<<"podaj"<<irozmiar<<"liczb:"<<std::endl;
-	int i=0;
-	do
-	{
-		std::cin>>t[i];
-		i++;
-	}while(i<irozmiar);
-}
-int main()
-{
-	int moja_tablica[5];
-	wypelnijtablice(moja_tablica,5);
-	int i=0;
-	do
-	{
-		std::cout<<moja_tablica[i]<<",";
-		i++;
-	}while(i<5);
-	
-	return 0;
-	
+
 }

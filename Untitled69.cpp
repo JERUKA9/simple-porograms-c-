@@ -1,23 +1,45 @@
 #include<iostream>
+using namespace std;
 
-void wypisztablice(int tablica[],int ile)
-{
-	for(int indeks=0;indeks<ile;indeks++)
-	std::cout<<tablica[indeks]<<std::endl;
-}
-void wczytajliczby(int tablica[],int ile)
-{
-	for(int indeks=0;indeks<ile;indeks++)
-	{
-		std::cout<<"podaj liczbe"<<(indeks+1)<<":";
-		std::cin>>tablica[indeks];
-	}
-}
-int main()
-{
-	int dane[5];
-	wczytajliczby(dane,5);
-	wypisztablice(dane,5);
-	return 0;
-	
+class shape {
+protected:
+float width,height;
+public:
+    void set_data(float a , float b) {
+    width=a;
+    height=b;
+    }
+
+
+};
+class rectangle: public shape{
+
+public:
+    float area(){
+    return (width * height);
+
+    }
+
+};
+class triangle: public shape {
+ public:
+     float area(){
+
+     return(width * height / 2);
+
+     }
+
+};
+int main(){
+
+rectangle rect;
+triangle tri;
+rect.set_data(5,3);
+tri.set_data(5,3);
+std::cout<<rect.area()<<std::endl;
+std::cout<<tri.area();
+return 0;
+
+
+
 }

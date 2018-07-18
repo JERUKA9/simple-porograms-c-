@@ -1,27 +1,20 @@
 #include<iostream>
 
-float a;
+#define gravity 25;
+#define length 30;
 
-float b;
+using namespace::std;
 
 
 int main()
 {
-	std::cout<<"podaj a:";
-	std::cin>>a;
-	
-	std::cout<<"podaj b:";
-	std::cin>>b;
-	
-	std::cout<<"a+b="<<a+b<<std::endl;
-	
-	std::cout<<"a-b="<<a-b<<std::endl;
-	
-	std::cout<<"a*b="<<a*b<<std::endl;
-	
-	std::cout<<"a/b="<<a/b<<std::endl;
-	
-	
-	return 0;
-	
+const float g =9.8;
+int b= 2;
+ b= 3;
+
+
+
+
+return 0;
+
 }

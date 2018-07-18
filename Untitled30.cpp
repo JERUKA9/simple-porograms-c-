@@ -1,10 +1,20 @@
 #include<iostream>
-int a =5;
-int b= 4;
-int c=6;
+
+using namespace::std;
+
 int main()
 {
-	std::cout<<"a+b+c="<<a+b+c<<std::endl;
-	std::cout<<"a=b=c="<<(a=b=c)<<std::endl;
-	
+int i;
+
+for(i=0;i<=1;i++)
+{
+
+    std::cout<<i<<std::endl;
+
+}
+
+
+
+ return 0;
+
 }
